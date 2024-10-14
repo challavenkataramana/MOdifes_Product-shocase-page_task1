@@ -120,18 +120,23 @@ nav ul li a:hover {
 
 
 /* Carousel Styles */
+
+
 .carousel {
     position: relative;
-    width: 100%;
+    width: 100%; 
     max-width: 800px;
+    height: 400px; 
     margin: 20px auto;
     overflow: hidden;
 }
 
 .carousel-wrapper {
-    display: flex;
-    width: 50%;
+    display:flex;
+    width: 100%;
     animation: slide 9s infinite;
+    height:auto;
+
    
 }
 
@@ -140,26 +145,62 @@ nav ul li a:hover {
     height: auto;
     flex: 1 0 100%; 
 }
+
+input[type="checkbox"] {
+    display: none;
+}
+
+#carousel1:checked ~ .carousel-wrapper {
+    transform: translateX(0%);
+    animation:none;
+    
+}
+
+#carousel2:checked ~ .carousel-wrapper {
+    transform: translateX(-100%);
+    animation:none;
+    
+}
+
+#carousel3:checked ~ .carousel-wrapper {
+    transform: translateX(-200%);
+    animation:none;
+ 
+}
+
+#carousel4:checked ~ .carousel-wrapper {
+    transform: translateX(-300%);
+    animation:none;
+    
+}
+/* Animation for auto-play */
+
+
 @keyframes slide {
     0% {
         transform: translateX(0%);
     }
-    33% {
+    25% {
         transform: translateX(-100%);
     }
-    66% {
+    50% {
         transform: translateX(-200%);
     }
-    100%{
+    75% {
+        transform: translateX(-300%);
+    }
+    100% {
         transform: translateX(0%);
     }
 }
 
-.carousel a {
+
+/* Styling for prev/next buttons */
+.carousel label {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color:black;
+    background-color: black;
     color: white;
     border: none;
     padding: 10px;
@@ -174,13 +215,10 @@ nav ul li a:hover {
 .carousel .next {
     right: 10px;
 }
-.carousel .next a{
+
+.carousel label{
     text-decoration: none;
-    color:white;
-}
-.carousel .prev a{
-    text-decoration: none;
-    color:white;
+    color: white;
 }
 
 /* Trending Products Styles */
@@ -279,9 +317,19 @@ nav ul li a:hover {
 /* Pagination Styles */
 .pagination {
     text-align: center;
-    margin: 10px 0;
+    margin:10px 0;
    
 }
+
+.pagination-contact {
+    text-align: center;
+    margin:30px 0;
+}
+.pagination-contact a{
+    text-decoration: none;
+}
+
+
 
 .pagination-button {
     padding: 10px 15px;
@@ -290,6 +338,7 @@ nav ul li a:hover {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin:10px 0;
 }
 
 .pagination-button:hover {
