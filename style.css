@@ -9,7 +9,7 @@ body {
 /* Header Styles */
 header {
     background-color: #333;
-    color: white;
+    color: black;
     padding: 5px 0;
     position: relative; 
     width: 100%;
@@ -220,24 +220,7 @@ input[type="checkbox"] {
     text-decoration: none;
     color: white;
 }
-media (max-width: 768px) {
-    .carousel-control-prev,
-    .carousel-control-next {
-        top: 50%; /* Vertically center the arrows */
-        transform: translateY(-50%);
-        padding: 8px; /* Slightly smaller padding for mobile */
-        background-color: rgba(0, 0, 0, 0.5); /* Optional background for better visibility */
-        color: white;
-    }
 
-    .carousel-control-prev {
-        left: 5px; /* Adjust spacing from the left edge */
-    }
-
-    .carousel-control-next {
-        right: 5px; /* Adjust spacing from the right edge */
-    }
-}
 /* Trending Products Styles */
 .trending-products {
     text-align: center;
