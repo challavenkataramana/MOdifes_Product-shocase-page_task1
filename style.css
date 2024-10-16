@@ -123,9 +123,7 @@ nav ul li a:hover {
 
 
 .carousel {
-    position: relative;
     width: 100%; 
-    max-width: 800px;
     height: 400px; 
     margin: 20px auto;
     overflow: hidden;
