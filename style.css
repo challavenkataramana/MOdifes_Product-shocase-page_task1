@@ -207,7 +207,7 @@ input[type="checkbox"] {
     text-decoration: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
     
   .carousel label
     {
