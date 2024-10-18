@@ -115,6 +115,18 @@ nav ul li a:hover {
         top: 25px;
         margin-left: 0;
     }
+    .carousel label
+    {
+       position: absolute;
+       top: 50%;
+       transform: translateY(-50%);
+       background-color: black;
+       color: white;
+       border: none;
+       padding: 10px;
+       cursor: pointer;
+       text-decoration: none;
+    }
 }
 
 
@@ -206,23 +218,6 @@ input[type="checkbox"] {
     cursor: pointer;
     text-decoration: none;
 }
-
-@media (max-width: 576px) {
-    
-  .carousel label
-    {
-       position: absolute;
-       top: 50%;
-       transform: translateY(-50%);
-       background-color: black;
-       color: white;
-       border: none;
-       padding: 10px;
-       cursor: pointer;
-       text-decoration: none;
-    }
-}
-
 .carousel .prev {
     left: 10px;
 }
