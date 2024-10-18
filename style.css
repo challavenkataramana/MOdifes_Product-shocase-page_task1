@@ -115,18 +115,7 @@ nav ul li a:hover {
         top: 25px;
         margin-left: 0;
     }
-    .carousel label
-    {
-       position: absolute;
-       top: 30%;
-       transform: translateY(-50%);
-       background-color: black;
-       color: white;
-       border: none;
-       padding: 10px;
-       cursor: pointer;
-       text-decoration: none;
-    }
+  
 }
 
 
