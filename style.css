@@ -8,12 +8,12 @@ body {
 }
 /* Header Styles */
 header {
-    background-color:black;
-    color:white;
+    background-color: #333;
+    color: white;
     padding: 5px 0;
     position: relative; 
     width: 100%;
-    z-index: 1000;
+    z-index:1000;
 }
 .group{
     display:flex;
@@ -62,11 +62,10 @@ nav ul li a:hover {
     font-size: 2rem;
     cursor: pointer;
 }
+
 #menu-toggle {
     display: none;
 }
-
-
 .cart-icon {
     margin-left: 10px; 
 }
@@ -80,109 +79,9 @@ nav ul li a:hover {
 .cart-icon a:hover {
     color: #ddd;
 }
-/* Styling for prev/next buttons */
-.carousel {
-    position: relative; /* Make the carousel the parent for positioning */
-}
-
-.carousel label {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%); /* Center the button vertically relative to the image */
-    background-color: black;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 18px;
-    z-index: 1; /* Ensure buttons are above images */
-}
-
-.carousel .prev {
-    left: 10px; /* Slightly inset from the left edge of the image */
-}
-
-.carousel .next {
-    right: 10px; /* Slightly inset from the right edge of the image */
-}
-
-/* Mobile view adjustments */
-@media (max-width: 768px) {
-    .carousel label {
-        padding: 5px 10px;
-        font-size: 16px;
-    }
-
-    .carousel .prev {
-        left: 10px;  /* Ensure the button is near the edge of the image */
-    }
-
-    .carousel .next {
-        right: 10px; /* Ensure the button is near the edge of the image */
-    }
-}
-
-/* Desktop view adjustments */
-@media (min-width: 769px) {
-    .carousel label {
-        padding: 10px 20px;
-        font-size: 24px;
-    }
-
-    .carousel .prev {
-        left: 20px; /* Adjust the distance for larger screens */
-    }
-
-    .carousel .next {
-        right: 20px; /* Adjust the distance for larger screens */
-    }
-}
-
-
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 0; 
-        width: 100%; 
-        background-color:rgb(78, 76, 76);
-        height: 0; 
-        opacity: 0; 
-        overflow: hidden; 
-        transition: height 0.5s ease, opacity 0.5s ease; 
-    }
-
-
-    nav ul li {
-        text-align:left;
-        padding: 10px 0;
-        width: 100%;
-        
-    }
-    .menu-icon {
-        display: block;
-    }
-    #menu-toggle:checked ~ #nav-links {
-        height: 150px; 
-        opacity: 1; 
-    }
-    .cart-icon {
-        position: absolute;
-        right: 40px;
-        top: 25px;
-        margin-left: 0;
-    }
-}
-  
-}
-
 
 
 /* Carousel Styles */
-
-
 .carousel {
     width: 100%; 
     height: 400px; 
@@ -232,8 +131,8 @@ input[type="checkbox"] {
     animation:none;
     
 }
-/* Animation for auto-play */
 
+/* Animation for auto-play */
 
 @keyframes slide {
     0% {
@@ -252,12 +151,92 @@ input[type="checkbox"] {
         transform: translateX(0%);
     }
 }
+
+.carousel {
+    position: relative;
+    max-width:800px;
+}
+
+.carousel label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); 
+    background-color: black;
+    color: white;
+    border: none;
+    padding:5px 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.carousel .prev {
+    left: 10px; 
+}
+
+.carousel .next {
+    right: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .carousel label {
+        padding: 5px 10px;
+        font-size: 16px;
+    }
+
+    .carousel .prev {
+        left: 10px;  
+    }
+
+    .carousel .next {
+        right: 10px; 
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0; 
+        width: 100%; 
+        background-color:rgb(78, 76, 76);
+        height: 0; 
+        opacity: 0; 
+        overflow: hidden; 
+        transition: height 0.5s ease, opacity 0.5s ease; 
+    }
+
+
+    nav ul li {
+        text-align:left;
+        padding: 10px 0;
+        width: 100%;
+        
+    }
+    .menu-icon {
+        display: block;
+    }
+    #menu-toggle:checked ~ #nav-links {
+        height: 150px; 
+        opacity: 1; 
+    }
+    .cart-icon {
+        position: absolute;
+        right: 40px;
+        top: 25px;
+        margin-left: 0;
+    }
+}
+
 /* Trending Products Styles */
 .trending-products {
     text-align: center;
     padding: 20px;
     background-color: #f4f4f4;
-   
     margin-right:20px;
 }
 
