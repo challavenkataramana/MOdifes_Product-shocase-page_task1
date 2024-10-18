@@ -115,7 +115,17 @@ nav ul li a:hover {
         top: 25px;
         margin-left: 0;
     }
-    https://challavenkataramana.github.io/Modified_Product-showcase-page_task1/
+    . carousel label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
   
 }
 
