@@ -138,18 +138,11 @@ nav ul li a:hover {
     font-size: 20px;
 }
 
-.carousel .prev {
-    left: 10px; 
-}
-
-.carousel .next {
-    right: 10px;
-}
 
 
 .trending-products {
     text-align: center;
-    padding:5px;
+    padding: 20px;
     background-color: #f4f4f4;
     margin-right:20px;
 }
@@ -198,7 +191,7 @@ nav ul li a:hover {
     justify-content: space-around;
     justify-items: center;
     padding: 20px;
-    width:300%;
+    width:400%;
     transition: transform 0.3s ease-in-out;
     margin: 0 auto; 
 }
@@ -250,12 +243,12 @@ nav ul li a:hover {
 
 .pagination {
     text-align: center;
-    margin:10px 5px;
+    margin:10px 0;
    
 }
 
 .pagination-button {
-    padding: 10px 10px;
+    padding: 10px 15px;
     background-color: #463a38;
     color: #fff;
     border: none;
@@ -264,22 +257,28 @@ nav ul li a:hover {
     margin:10px 10px;
     text-decoration: none;
 }
-
-.pagination-button:hover {
-    background-color: hsl(0, 0%, 33%);
-}
-
 .page-number{
-    background-color:rgb(110, 43, 18);
-    padding: 7px 10px;
+    padding: 10px 15px;
+    background-color: #70441f;
+    color: #fff;
+    border: none;
     border-radius: 3px;
-    font-weight: bold;
-    color: white;
-
+    cursor: pointer;
+    margin:5px 5px;
 }
 .page-number:hover{
-    background-color:rgb(37, 94, 4);
+    background-color: #0f5c15;
 }
+.pagination-button:hover {
+    background-color: #555;
+}
+
+#page-number
+
+.pagination span {
+    margin: 0 10px;
+}
+
 .contact h1 {
     margin-top:40px;
     text-align : center;
@@ -335,6 +334,8 @@ nav ul li a:hover {
 .contact-form button:hover {
     background-color: #555;
 }
+
+
 footer {
     background-color: #333;
     color: #fff;
@@ -395,10 +396,18 @@ footer {
         top: 25px;
         margin-left: 0;
     }
-    .trending-products{
-        margin-top:-40px;
+    .carousel label {
+        padding: 5px 10px;
+        font-size: 16px;
     }
-    
+
+    .carousel .prev {
+        left: 10px;  
+    }
+
+    .carousel .next {
+        right: 10px; 
+    }
     
    .product-grid {
         display:grid;
@@ -409,7 +418,7 @@ footer {
         width:300%;
         transition: transform 0.3s ease-in-out;
         margin: 0 auto; 
- }
+    }
 }
 
 
